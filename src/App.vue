@@ -89,13 +89,12 @@ body {
   background-size: cover;
 }
 
-
 #app {
   font-family: "Ubuntu", sans-serif;
   text-align: center;
   display: flex;
   flex-flow: column;
-   text-shadow: -0.2px 0 black, 0 0.2px black, 0.2px 0 black, 0 -0.2px black;
+  text-shadow: -0.2px 0 black, 0 0.2px black, 0.2px 0 black, 0 -0.2px black;
   color: white;
 }
 .nav {
@@ -121,8 +120,28 @@ button {
   height: 3.3vh;
   border-radius: 3px;
   margin-left: 10px;
+  font-size: 0.8vw;
   border: none;
   transition-duration: 444ms;
+}
+@media (max-width: 640px) {
+  button {
+    width: 8vw;
+    height: 3vh;
+    border-radius: 3px;
+    margin-left: 10px;
+    border: none;
+    transition-duration: 444ms;
+  }
+  input {
+    width: 20vw;
+    height: 3vh;
+    padding-right: 10px;
+    border: none;
+    opacity: 0.7;
+    border-radius: 3px;
+    font-size: 5pt;
+  }
 }
 button:hover {
   background: #2c3e50;
